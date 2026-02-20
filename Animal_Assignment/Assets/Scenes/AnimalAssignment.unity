@@ -350,6 +350,8 @@ GameObject:
   - component: {fileID: 155107111}
   - component: {fileID: 155107113}
   - component: {fileID: 155107112}
+  - component: {fileID: 155107115}
+  - component: {fileID: 155107114}
   m_Layer: 0
   m_Name: Leaf Sheep
   m_TagString: Untagged
@@ -487,32 +489,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _parentBlackboard: {fileID: 0}
-  _serializedBlackboard: '{"_variables":{"Food":{"_name":"Food","_id":"e507df4b-6866-4d4c-8745-948306592cc9","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Light":{"_name":"Light","_id":"e78ec895-74f4-4841-a388-e28bda96584e","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Energy":{"_name":"Energy","_id":"6a45d7e8-ad33-400f-85d2-e53df3d96161","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Fun":{"_name":"Fun","_id":"f21bac57-9716-421e-9a3f-dbac33b646e5","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+  _serializedBlackboard: '{"_variables":{"Food":{"_value":10.0,"_name":"Food","_id":"e507df4b-6866-4d4c-8745-948306592cc9","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Light":{"_value":10.0,"_name":"Light","_id":"e78ec895-74f4-4841-a388-e28bda96584e","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Sleep":{"_value":10.0,"_name":"Sleep","_id":"6a45d7e8-ad33-400f-85d2-e53df3d96161","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Fun":{"_value":10.0,"_name":"Fun","_id":"f21bac57-9716-421e-9a3f-dbac33b646e5","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"thoughtBubble":{"_name":"thoughtBubble","_id":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"bubbleTransform":{"_name":"bubbleTransform","_id":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}'
-  _objectReferences: []
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"bubbleTransform":{"_value":1,"_name":"bubbleTransform","_id":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"timerSpeed":{"_name":"timerSpeed","_id":"81958732-8de7-42f9-b29d-8ba2e61889b4","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
+  _objectReferences:
+  - {fileID: 0}
+  - {fileID: 1657925124922836911, guid: c62aa6f6d764b424ca537f823254ec25, type: 3}
   _serializedVariables:
-  - _json: '{"_name":"Food","_id":"e507df4b-6866-4d4c-8745-948306592cc9","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+  - _json: '{"_value":10.0,"_name":"Food","_id":"e507df4b-6866-4d4c-8745-948306592cc9","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
-  - _json: '{"_name":"Light","_id":"e78ec895-74f4-4841-a388-e28bda96584e","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+  - _json: '{"_value":10.0,"_name":"Light","_id":"e78ec895-74f4-4841-a388-e28bda96584e","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
-  - _json: '{"_name":"Energy","_id":"6a45d7e8-ad33-400f-85d2-e53df3d96161","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+  - _json: '{"_value":10.0,"_name":"Sleep","_id":"6a45d7e8-ad33-400f-85d2-e53df3d96161","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
-  - _json: '{"_name":"Fun","_id":"f21bac57-9716-421e-9a3f-dbac33b646e5","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+  - _json: '{"_value":10.0,"_name":"Fun","_id":"f21bac57-9716-421e-9a3f-dbac33b646e5","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
   - _json: '{"_name":"thoughtBubble","_id":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
     _references: []
-  - _json: '{"_name":"bubbleTransform","_id":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
+  - _json: '{"_value":1,"_name":"bubbleTransform","_id":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
+    _references:
+    - {fileID: 0}
+    - {fileID: 1657925124922836911, guid: c62aa6f6d764b424ca537f823254ec25, type: 3}
+  - _json: '{"_name":"timerSpeed","_id":"81958732-8de7-42f9-b29d-8ba2e61889b4","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
 --- !u!114 &155107113
 MonoBehaviour:
@@ -527,7 +537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serializedExposedParameters: []
-  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"parent":{},"clonePosition":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"cloneRotation":{},"saveCloneAs":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"overrideAgent":{"_type":"UnityEngine.Transform","_value":1},"$type":"NodeCanvas.Tasks.Actions.InstantiateGameObject"},{"thoughtBubble":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"bubbleTransform":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"enableLight":true,"$type":"NodeCanvas.Tasks.Actions.ThinkThoughtAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Eat","_position":{"x":611.0,"y":334.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Play","_position":{"x":322.0,"y":263.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_nestedFSM":{"_name":""},"_name":"Flee","_position":{"x":437.0,"y":415.0},"$type":"NodeCanvas.StateMachines.NestedFSMState"},{"_nestedFSM":{"_value":2},"_name":"Play","_position":{"x":171.0,"y":417.0},"$type":"NodeCanvas.StateMachines.NestedFSMState"},{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Sleep","_position":{"x":171.0,"y":158.0},"$type":"NodeCanvas.StateMachines.ActionState"},{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Photosynthesize","_position":{"x":519.0,"y":154.0},"$type":"NodeCanvas.StateMachines.ActionState"}],"connections":[{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"actions":[{"parent":{},"clonePosition":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"cloneRotation":{},"saveCloneAs":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"overrideAgent":{"_type":"UnityEngine.Transform","_value":1},"$type":"NodeCanvas.Tasks.Actions.InstantiateGameObject"},{"thoughtBubble":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"bubbleTransform":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"enableBurger":true,"$type":"NodeCanvas.Tasks.Actions.ThinkThoughtAT"},{"overrideAgent":{"_type":"UnityEngine.Transform","_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_color":{"r":1.0,"g":0.5388464,"b":0.3215686,"a":1.0},"_name":"Eat","_position":{"x":557.3913,"y":429.139},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"food":{},"light":{},"sleep":{},"timerSpeed":{},"$type":"NodeCanvas.Tasks.Actions.StatManagerAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Wander","_position":{"x":287.4913,"y":300.9596},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"actions":[{"parent":{},"clonePosition":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"cloneRotation":{},"saveCloneAs":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"overrideAgent":{"_type":"UnityEngine.Transform","_value":1},"$type":"NodeCanvas.Tasks.Actions.InstantiateGameObject"},{"thoughtBubble":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"bubbleTransform":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"enableZzz":true,"$type":"NodeCanvas.Tasks.Actions.ThinkThoughtAT"},{"overrideAgent":{"_type":"UnityEngine.Transform","_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_color":{"r":0.2102617,"g":0.2353135,"b":0.4245283,"a":1.0},"_name":"Sleep","_position":{"x":-285.4833,"y":113.5738},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"},{"_actionList":{"actions":[{"parent":{},"clonePosition":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"cloneRotation":{},"saveCloneAs":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"overrideAgent":{"_type":"UnityEngine.Transform","_value":1},"$type":"NodeCanvas.Tasks.Actions.InstantiateGameObject"},{"thoughtBubble":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"bubbleTransform":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"enableLight":true,"$type":"NodeCanvas.Tasks.Actions.ThinkThoughtAT"},{"overrideAgent":{"_type":"UnityEngine.Transform","_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_color":{"r":0.7010012,"g":1.0,"b":0.3726415,"a":1.0},"_name":"Photosynthesize","_position":{"x":427.9711,"y":110.7489},"$type":"NodeCanvas.StateMachines.ActionState","$id":"3"},{"_nestedFSM":{"_name":""},"_name":"Flee","_position":{"x":-54.27741,"y":451.2608},"$type":"NodeCanvas.StateMachines.NestedFSMState","$id":"4"},{"_nestedFSM":{"_value":2},"_name":"Play","_position":{"x":122.4156,"y":470.6451},"$type":"NodeCanvas.StateMachines.NestedFSMState","$id":"5"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"Food","_targetVariableID":"e507df4b-6866-4d4c-8745-948306592cc9"},"checkType":4,"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"Sleep","_targetVariableID":"6a45d7e8-ad33-400f-85d2-e53df3d96161"},"checkType":4,"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"Light","_targetVariableID":"e78ec895-74f4-4841-a388-e28bda96584e"},"checkType":4,"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"specifiedTagOnly":true,"objectTag":"Finish","saveGameObjectAs":{"_name":""},"$type":"NodeCanvas.Tasks.Conditions.CheckTrigger_Transform"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
   _boundGraphObjectReferences:
   - {fileID: 0}
   - {fileID: 1657925124922836911, guid: c62aa6f6d764b424ca537f823254ec25, type: 3}
@@ -536,8 +546,8 @@ MonoBehaviour:
     _version: 3.33
     _category: 
     _comments: 
-    _translation: {x: -193, y: 164}
-    _zoomFactor: 0.8197976
+    _translation: {x: -164, y: 163}
+    _zoomFactor: 1
   _firstActivation: 0
   _enableAction: 0
   _disableAction: 0
@@ -546,6 +556,94 @@ MonoBehaviour:
   _updateMode: 0
   _graph: {fileID: 0}
   _blackboard: {fileID: 155107112}
+--- !u!114 &155107114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155107105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+--- !u!108 &155107115
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155107105}
+  m_Enabled: 0
+  serializedVersion: 11
+  m_Type: 2
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 11.01
+  m_Range: 10.34
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
 --- !u!1 &254457040
 GameObject:
   m_ObjectHideFlags: 0
@@ -1795,67 +1893,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2045397192}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &8980745823049680175
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1657925124922836911, guid: c62aa6f6d764b424ca537f823254ec25, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.99
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657925124922836911, guid: c62aa6f6d764b424ca537f823254ec25, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.967
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657925124922836911, guid: c62aa6f6d764b424ca537f823254ec25, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.675
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657925124922836911, guid: c62aa6f6d764b424ca537f823254ec25, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657925124922836911, guid: c62aa6f6d764b424ca537f823254ec25, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657925124922836911, guid: c62aa6f6d764b424ca537f823254ec25, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657925124922836911, guid: c62aa6f6d764b424ca537f823254ec25, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657925124922836911, guid: c62aa6f6d764b424ca537f823254ec25, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657925124922836911, guid: c62aa6f6d764b424ca537f823254ec25, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657925124922836911, guid: c62aa6f6d764b424ca537f823254ec25, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3027682788748385834, guid: c62aa6f6d764b424ca537f823254ec25, type: 3}
-      propertyPath: m_Name
-      value: ThoughtBubble
-      objectReference: {fileID: 0}
-    - target: {fileID: 5288179477389873227, guid: c62aa6f6d764b424ca537f823254ec25, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 155107109}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c62aa6f6d764b424ca537f823254ec25, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1863,5 +1900,4 @@ SceneRoots:
   - {fileID: 1939574708}
   - {fileID: 957456696}
   - {fileID: 254457042}
-  - {fileID: 8980745823049680175}
   - {fileID: 155107109}
