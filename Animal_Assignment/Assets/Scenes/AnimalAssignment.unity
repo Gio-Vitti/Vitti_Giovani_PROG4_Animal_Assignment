@@ -352,6 +352,7 @@ GameObject:
   - component: {fileID: 155107112}
   - component: {fileID: 155107115}
   - component: {fileID: 155107114}
+  - component: {fileID: 155107116}
   m_Layer: 0
   m_Name: Leaf Sheep
   m_TagString: Untagged
@@ -434,7 +435,7 @@ Transform:
   m_GameObject: {fileID: 155107105}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -1.45, y: 0.24, z: -1.61}
+  m_LocalPosition: {x: 0, y: 0.24, z: -2.96}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -451,7 +452,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 4
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -537,16 +538,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serializedExposedParameters: []
-  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"actions":[{"parent":{},"clonePosition":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"cloneRotation":{},"saveCloneAs":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"overrideAgent":{"_type":"UnityEngine.Transform","_value":1},"$type":"NodeCanvas.Tasks.Actions.InstantiateGameObject"},{"thoughtBubble":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"bubbleTransform":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"enableBurger":true,"$type":"NodeCanvas.Tasks.Actions.ThinkThoughtAT"},{"overrideAgent":{"_type":"UnityEngine.Transform","_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_color":{"r":1.0,"g":0.5388464,"b":0.3215686,"a":1.0},"_name":"Eat","_position":{"x":557.3913,"y":429.139},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"food":{},"light":{},"sleep":{},"timerSpeed":{},"$type":"NodeCanvas.Tasks.Actions.StatManagerAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Wander","_position":{"x":287.4913,"y":300.9596},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"actions":[{"parent":{},"clonePosition":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"cloneRotation":{},"saveCloneAs":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"overrideAgent":{"_type":"UnityEngine.Transform","_value":1},"$type":"NodeCanvas.Tasks.Actions.InstantiateGameObject"},{"thoughtBubble":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"bubbleTransform":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"enableZzz":true,"$type":"NodeCanvas.Tasks.Actions.ThinkThoughtAT"},{"overrideAgent":{"_type":"UnityEngine.Transform","_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_color":{"r":0.2102617,"g":0.2353135,"b":0.4245283,"a":1.0},"_name":"Sleep","_position":{"x":-285.4833,"y":113.5738},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"},{"_actionList":{"actions":[{"parent":{},"clonePosition":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"cloneRotation":{},"saveCloneAs":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"overrideAgent":{"_type":"UnityEngine.Transform","_value":1},"$type":"NodeCanvas.Tasks.Actions.InstantiateGameObject"},{"thoughtBubble":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"bubbleTransform":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"enableLight":true,"$type":"NodeCanvas.Tasks.Actions.ThinkThoughtAT"},{"overrideAgent":{"_type":"UnityEngine.Transform","_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_color":{"r":0.7010012,"g":1.0,"b":0.3726415,"a":1.0},"_name":"Photosynthesize","_position":{"x":427.9711,"y":110.7489},"$type":"NodeCanvas.StateMachines.ActionState","$id":"3"},{"_nestedFSM":{"_name":""},"_name":"Flee","_position":{"x":-54.27741,"y":451.2608},"$type":"NodeCanvas.StateMachines.NestedFSMState","$id":"4"},{"_nestedFSM":{"_value":2},"_name":"Play","_position":{"x":122.4156,"y":470.6451},"$type":"NodeCanvas.StateMachines.NestedFSMState","$id":"5"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"Food","_targetVariableID":"e507df4b-6866-4d4c-8745-948306592cc9"},"checkType":4,"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"Sleep","_targetVariableID":"6a45d7e8-ad33-400f-85d2-e53df3d96161"},"checkType":4,"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"Light","_targetVariableID":"e78ec895-74f4-4841-a388-e28bda96584e"},"checkType":4,"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"specifiedTagOnly":true,"objectTag":"Finish","saveGameObjectAs":{"_name":""},"$type":"NodeCanvas.Tasks.Conditions.CheckTrigger_Transform"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"waitTime":1.5,"distance":5.0,"$type":"NodeCanvas.Tasks.Actions.WanderAT"},{"food":{},"light":{},"sleep":{},"timerSpeed":{},"$type":"NodeCanvas.Tasks.Actions.StatManagerAT"}]},"_color":{"r":1.0,"g":1.0,"b":1.0,"a":1.0},"_name":"Wander","_position":{"x":288.4913,"y":300.9596},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"actions":[{"parent":{},"clonePosition":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"cloneRotation":{},"saveCloneAs":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"overrideAgent":{"_type":"UnityEngine.Transform","_value":1},"$type":"NodeCanvas.Tasks.Actions.InstantiateGameObject"},{"thoughtBubble":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"bubbleTransform":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"enableBurger":true,"$type":"NodeCanvas.Tasks.Actions.ThinkThoughtAT"},{"overrideAgent":{"_type":"UnityEngine.Transform","_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_color":{"r":1.0,"g":0.5808714,"b":0.3160377,"a":1.0},"_name":"Eat","_position":{"x":557.3913,"y":429.139},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"actions":[{"parent":{},"clonePosition":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"cloneRotation":{},"saveCloneAs":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"overrideAgent":{"_type":"UnityEngine.Transform","_value":1},"$type":"NodeCanvas.Tasks.Actions.InstantiateGameObject"},{"thoughtBubble":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"bubbleTransform":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"enableZzz":true,"$type":"NodeCanvas.Tasks.Actions.ThinkThoughtAT"},{"overrideAgent":{"_type":"UnityEngine.Transform","_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_color":{"r":0.3443396,"g":0.7444538,"b":1.0,"a":1.0},"_name":"Sleep","_position":{"x":-285.4833,"y":113.5738},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"},{"_actionList":{"actions":[{"parent":{},"clonePosition":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"cloneRotation":{},"saveCloneAs":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"overrideAgent":{"_type":"UnityEngine.Transform","_value":1},"$type":"NodeCanvas.Tasks.Actions.InstantiateGameObject"},{"thoughtBubble":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"bubbleTransform":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"enableLight":true,"$type":"NodeCanvas.Tasks.Actions.ThinkThoughtAT"},{"overrideAgent":{"_type":"UnityEngine.Transform","_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_color":{"r":0.7010012,"g":1.0,"b":0.3726415,"a":1.0},"_name":"Photosynthesize","_position":{"x":430.9715,"y":110.7489},"$type":"NodeCanvas.StateMachines.ActionState","$id":"3"},{"_nestedFSM":{"_name":""},"_name":"Flee","_position":{"x":-54.27741,"y":451.2608},"$type":"NodeCanvas.StateMachines.NestedFSMState","$id":"4"},{"_nestedFSM":{"_value":2},"_name":"Play","_position":{"x":122.4156,"y":470.6451},"$type":"NodeCanvas.StateMachines.NestedFSMState","$id":"5"},{"_nestedFSM":{"_value":3},"_name":"Wander","_position":{"x":302.0,"y":599.0},"$type":"NodeCanvas.StateMachines.NestedFSMState"}],"connections":[{"_condition":{"valueA":{"_name":"Food","_targetVariableID":"e507df4b-6866-4d4c-8745-948306592cc9"},"checkType":4,"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"Sleep","_targetVariableID":"6a45d7e8-ad33-400f-85d2-e53df3d96161"},"checkType":4,"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"Light","_targetVariableID":"e78ec895-74f4-4841-a388-e28bda96584e"},"checkType":4,"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"specifiedTagOnly":true,"objectTag":"Finish","saveGameObjectAs":{"_name":""},"$type":"NodeCanvas.Tasks.Conditions.CheckTrigger_Transform"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
   _boundGraphObjectReferences:
   - {fileID: 0}
   - {fileID: 1657925124922836911, guid: c62aa6f6d764b424ca537f823254ec25, type: 3}
   - {fileID: 11400000, guid: 6f4ba3b29b3e606448ddb5eb357c096a, type: 2}
+  - {fileID: 11400000, guid: 0ebf40da27350f44aafc82c45d3f1fb2, type: 2}
   _boundGraphSource:
     _version: 3.33
     _category: 
     _comments: 
-    _translation: {x: -164, y: 163}
+    _translation: {x: -44, y: 226}
     _zoomFactor: 1
   _firstActivation: 0
   _enableAction: 0
@@ -644,6 +646,33 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!54 &155107116
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155107105}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &254457040
 GameObject:
   m_ObjectHideFlags: 0
