@@ -13,7 +13,9 @@ namespace NodeCanvas.Tasks.Actions {
 	public class WanderAT : ActionTask {
 		public float waitTime;
 		public float distance;
+		private Vector3 destination;
         private NavMeshAgent navAgent;
+		public LayerMask ground;
        
 
         //Use for initialization. This is called only once in the lifetime of the task.
@@ -27,39 +29,46 @@ namespace NodeCanvas.Tasks.Actions {
 		//EndAction can be called from anywhere.
 		protected override void OnExecute() {
 			navAgent = agent.GetComponent<NavMeshAgent>();
-			StartCoroutine(moveCycle());
-		}
+            navAgent.SetDestination(newDestination(distance));
+        }
 
 		//Called once per frame while the action is active.
 		protected override void OnUpdate() {
-			
+
+			//Resets move cycle when stopped
+            if (Vector3.Distance(agent.transform.position, destination) <= 0.3 && navAgent.isStopped == false) {
+
+                navAgent.isStopped = true;
+                StartCoroutine(MoveCycle());
+			}
+
+			//Prevents animal fro,m getting stuck in corners
+			if (Physics.Raycast(agent.transform.position, agent.transform.forward, 0.1f, ground))
+			{
+				destination = -agent.transform.forward;
+                StartCoroutine(MoveCycle());
+            }
 		}
 
-		IEnumerator moveCycle()
+		IEnumerator MoveCycle()
 		{
             yield return new WaitForSeconds(waitTime);
-            WanderAround();
-			
-		}
-
-       private void WanderAround()
-		{
+            navAgent.isStopped = false;
             navAgent.SetDestination(newDestination(distance));
-			StartCoroutine(moveCycle());
         }
 
 		private Vector3 newDestination(float distance) //Get a random angle for the character to move towards
 		{
 			//Get angle
 			float angleRad = (Random.Range(0, 360) * Mathf.Deg2Rad);
-            Debug.Log(angleRad);
-            float x = Mathf.Cos(angleRad) * Random.Range(-1,2);
-            float z = Mathf.Sin(angleRad) * Random.Range(-1, 2);
+         
+			float x = Mathf.Cos(angleRad);
+			float z = Mathf.Sin(angleRad);
 
-			Vector3 dest = ((agent.transform.position + new Vector3(x, 0, z)).normalized * distance);
+			destination = ((agent.transform.forward + new Vector3(x, 0, z)).normalized * distance);
 
             //set distance
-            return (dest);
+            return (destination);
         }
 
         //Called when the task is disabled.

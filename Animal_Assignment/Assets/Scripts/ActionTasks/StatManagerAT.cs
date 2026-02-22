@@ -1,5 +1,7 @@
 using NodeCanvas.Framework;
 using ParadoxNotion.Design;
+using UnityEditor.UI;
+using UnityEngine;
 
 
 namespace NodeCanvas.Tasks.Actions {
@@ -8,6 +10,7 @@ namespace NodeCanvas.Tasks.Actions {
 		public BBParameter<float> food;
 		public BBParameter<float> light;
 		public BBParameter<float> sleep;
+		public BBParameter<float> fun;
 		public BBParameter<float> timerSpeed;
 
         //Use for initialization. This is called only once in the lifetime of the task.
@@ -25,8 +28,12 @@ namespace NodeCanvas.Tasks.Actions {
 
 		//Called once per frame while the action is active.
 		protected override void OnUpdate() {
-			
-		}
+			//Decrease values over time;
+			food.value -= Time.deltaTime;
+            light.value -= Time.deltaTime * 0.6f;
+            sleep.value -= Time.deltaTime * 0.3f;
+            fun.value -= Time.deltaTime * 0.2f;
+        }
 
 		//Called when the task is disabled.
 		protected override void OnStop() {

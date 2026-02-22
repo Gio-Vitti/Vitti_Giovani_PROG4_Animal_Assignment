@@ -13,4 +13,14 @@ public class PlayerInteraction : MonoBehaviour
     {
         
     }
+
+    public void spawnBurger()
+    {
+
+    }
+
+    public void spawnBall ()
+    {
+
+    }
 }
