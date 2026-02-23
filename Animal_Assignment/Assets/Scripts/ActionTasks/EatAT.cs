@@ -35,11 +35,13 @@ namespace NodeCanvas.Tasks.Actions {
 
 			//Search for burger
 			Collider[] burger = Physics.OverlapSphere(agent.transform.position, 100, burgerLayer);
-			navAgent.SetDestination(burger[0].transform.position);		
+			navAgent.SetDestination(burger[0].transform.position);
+            Debug.DrawRay(agent.transform.position, Vector3.forward);
 
-			//Eat that burger
-			if (Physics.Raycast(agent.transform.position, Vector3.forward, 10, burgerLayer))
+            //Eat that burger
+            if (Physics.Raycast(agent.transform.position, agent.transform.forward, 1, burgerLayer))
 			{
+				
                 food.value = 10;
 				Object.Destroy(burger[0].gameObject);
 			}
