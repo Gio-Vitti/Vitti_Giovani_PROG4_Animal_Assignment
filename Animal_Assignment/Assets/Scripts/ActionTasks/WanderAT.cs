@@ -42,7 +42,7 @@ namespace NodeCanvas.Tasks.Actions {
                 StartCoroutine(MoveCycle());
 			}
 
-			//Prevents animal fro,m getting stuck in corners
+			//Prevents animal from getting stuck in corners
 			if (Physics.Raycast(agent.transform.position, agent.transform.forward, 0.1f, ground))
 			{
 				destination = -agent.transform.forward;

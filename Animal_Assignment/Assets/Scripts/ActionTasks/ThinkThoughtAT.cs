@@ -52,17 +52,12 @@ namespace NodeCanvas.Tasks.Actions {
             bubbleTransform.value.position = agent.transform.position + Vector3.up;
             thoughtBubble.value.transform.position = bubbleTransform.value.position;
 
-            time += Time.deltaTime;
-            if (time > 5)
-            {
-				EndAction(true);
-            }
         }
 
 		//Called when the task is disabled.
 		protected override void OnStop() {
-			
-		}
+            Object.Destroy(thoughtBubble.value);
+        }
 
 		//Called when the task is paused.
 		protected override void OnPause() {
