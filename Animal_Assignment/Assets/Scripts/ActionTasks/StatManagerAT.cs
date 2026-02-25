@@ -31,8 +31,8 @@ namespace NodeCanvas.Tasks.Actions {
 			//Decrease values over time;
 			food.value -= Time.deltaTime;
             light.value -= Time.deltaTime * 0.6f;
-            sleep.value -= Time.deltaTime * 0.3f;
-            fun.value -= Time.deltaTime * 0.2f;
+            sleep.value -= Time.deltaTime * 0.2f;
+            fun.value -= Time.deltaTime * 0.4f;
         }
 
 		//Called when the task is disabled.

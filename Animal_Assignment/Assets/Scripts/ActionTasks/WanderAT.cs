@@ -50,7 +50,7 @@ namespace NodeCanvas.Tasks.Actions {
             }
 		}
 
-		IEnumerator MoveCycle()
+		IEnumerator MoveCycle() //Waits before setting new destination
 		{
             yield return new WaitForSeconds(waitTime);
             navAgent.isStopped = false;

@@ -40,8 +40,7 @@ namespace NodeCanvas.Tasks.Actions {
 
             //Eat that burger
             if (Physics.Raycast(agent.transform.position, agent.transform.forward, 1, burgerLayer))
-			{
-				
+			{			
                 food.value = 10;
 				Object.Destroy(burger[0].gameObject);
 			}
