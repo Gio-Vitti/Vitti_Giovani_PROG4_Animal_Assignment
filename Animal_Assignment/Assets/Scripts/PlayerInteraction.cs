@@ -21,6 +21,11 @@ public class PlayerInteraction : MonoBehaviour
         {
            SpawnBurger();
         }
+
+        if (Input.GetMouseButtonDown(0) && blackboard.GetVariableValue<float>("Fun") <= 0)
+        {
+            SpawnBall();
+        }
     }
 
     public void SpawnBurger()
@@ -29,6 +34,15 @@ public class PlayerInteraction : MonoBehaviour
         if (Physics.Raycast(mouseRay, out RaycastHit hitInfo))
         {
             Instantiate(burger, hitInfo.point + (Vector3.up * 0.2f), Quaternion.identity);
+        }
+    }
+
+    public void SpawnBall()
+    {
+        Ray mouseRay = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
+        if (Physics.Raycast(mouseRay, out RaycastHit hitInfo))
+        {
+            Instantiate(ball, hitInfo.point + Vector3.up, Quaternion.identity);
         }
     }
 

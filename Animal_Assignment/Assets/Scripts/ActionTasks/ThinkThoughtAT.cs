@@ -34,6 +34,8 @@ namespace NodeCanvas.Tasks.Actions {
 		//EndAction can be called from anywhere.
 		protected override void OnExecute() {
 
+
+
 			//get children
 			burger = thoughtBubble.value.transform.GetChild(0).gameObject;
             light = thoughtBubble.value.transform.GetChild(1).gameObject;

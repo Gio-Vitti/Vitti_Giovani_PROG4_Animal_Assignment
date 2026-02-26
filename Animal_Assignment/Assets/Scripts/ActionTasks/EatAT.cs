@@ -13,8 +13,7 @@ namespace NodeCanvas.Tasks.Actions {
 		public LayerMask burgerLayer;
 		public BBParameter<float> food;
         private NavMeshAgent navAgent;
-		private Rigidbody rb;
-		private Collider collider;
+	
 
         //Use for initialization. This is called only once in the lifetime of the task.
         //Return null if init was successfull. Return an error string otherwise
@@ -27,7 +26,7 @@ namespace NodeCanvas.Tasks.Actions {
 		//EndAction can be called from anywhere.
 		protected override void OnExecute() {
             navAgent = agent.GetComponent<NavMeshAgent>();
-			rb = agent.GetComponent<Rigidbody>();
+			
         }
 
 		//Called once per frame while the action is active.
@@ -36,7 +35,7 @@ namespace NodeCanvas.Tasks.Actions {
 			//Search for burger
 			Collider[] burger = Physics.OverlapSphere(agent.transform.position, 100, burgerLayer);
 			navAgent.SetDestination(burger[0].transform.position);
-            Debug.DrawRay(agent.transform.position, Vector3.forward);
+           
 
             //Eat that burger
             if (Physics.Raycast(agent.transform.position, agent.transform.forward, 1, burgerLayer))
