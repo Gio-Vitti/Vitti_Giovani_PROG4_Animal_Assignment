@@ -16,6 +16,7 @@ namespace NodeCanvas.Tasks.Actions {
 		private Vector3 destination;
         private NavMeshAgent navAgent;
 		public LayerMask ground;
+		public BBParameter<bool> isWandering;
        
 
         //Use for initialization. This is called only once in the lifetime of the task.
@@ -30,6 +31,7 @@ namespace NodeCanvas.Tasks.Actions {
 		protected override void OnExecute() {
 			navAgent = agent.GetComponent<NavMeshAgent>();
             navAgent.SetDestination(newDestination(distance));
+			isWandering.value = true;
         }
 
 		//Called once per frame while the action is active.
@@ -73,7 +75,7 @@ namespace NodeCanvas.Tasks.Actions {
 
         //Called when the task is disabled.
         protected override void OnStop() {
-			
+			isWandering.value = false;
 		}
 
 		//Called when the task is paused.

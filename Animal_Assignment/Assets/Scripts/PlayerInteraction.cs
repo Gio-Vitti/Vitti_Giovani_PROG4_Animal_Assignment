@@ -7,6 +7,8 @@ public class PlayerInteraction : MonoBehaviour
     public GameObject burger;
     public GameObject ball;
     private Blackboard blackboard;
+    public LayerMask fishLayer;
+    public Blackboard fishBB;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -46,8 +48,12 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 
-    public void spawnBall ()
+    public void clickFish()
     {
-
+        Ray mouseRay = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
+        if (Physics.Raycast(mouseRay, out RaycastHit hitInfo, fishLayer))
+        {
+            fishBB.SetVariableValue("fishClicked", true);
+        }
     }
 }

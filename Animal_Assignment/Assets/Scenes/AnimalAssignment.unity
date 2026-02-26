@@ -713,15 +713,19 @@ MonoBehaviour:
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"thoughtBubble":{"_name":"thoughtBubble","_id":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"bubbleTransform":{"_value":1,"_name":"bubbleTransform","_id":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"timerSpeed":{"_name":"timerSpeed","_id":"81958732-8de7-42f9-b29d-8ba2e61889b4","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"fishTimer":{"_name":"fishTimer","_id":"2cabe9f7-7e49-4842-8859-3dc2351cd34e","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"lightSpot":{"_value":2,"_name":"lightSpot","_id":"26a3d101-b21e-4c16-8404-97ee2b321044","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"caveSpot":{"_value":3,"_name":"caveSpot","_id":"c7110ad4-6269-40f3-a649-8ef4a3ee26d8","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}'
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"caveEntranceSpot":{"_value":4,"_name":"caveEntranceSpot","_id":"3991b0ad-17cb-44fe-9cfb-b0c30abcb99c","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"ballKicked":{"_name":"ballKicked","_id":"cbc4e060-0eea-4b9f-a4c9-4fc0a02db6a0","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"fishAttacking":{"_name":"fishAttacking","_id":"12d8240d-1779-433c-8956-31dd6416b2a3","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"isWandering":{"_name":"isWandering","_id":"109399d1-2e67-4f75-a6ed-84a324e710e1","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
   _objectReferences:
   - {fileID: 0}
   - {fileID: 1657925124922836911, guid: c62aa6f6d764b424ca537f823254ec25, type: 3}
   - {fileID: 34069844}
   - {fileID: 1730691253}
+  - {fileID: 737231348}
   _serializedVariables:
   - _json: '{"_value":10.0,"_name":"Food","_id":"e507df4b-6866-4d4c-8745-948306592cc9","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
@@ -746,9 +750,6 @@ MonoBehaviour:
   - _json: '{"_name":"timerSpeed","_id":"81958732-8de7-42f9-b29d-8ba2e61889b4","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
-  - _json: '{"_name":"fishTimer","_id":"2cabe9f7-7e49-4842-8859-3dc2351cd34e","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
-      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
-    _references: []
   - _json: '{"_value":1,"_name":"lightSpot","_id":"26a3d101-b21e-4c16-8404-97ee2b321044","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
     _references:
@@ -759,6 +760,20 @@ MonoBehaviour:
     _references:
     - {fileID: 0}
     - {fileID: 1730691253}
+  - _json: '{"_value":1,"_name":"caveEntranceSpot","_id":"3991b0ad-17cb-44fe-9cfb-b0c30abcb99c","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
+    _references:
+    - {fileID: 0}
+    - {fileID: 737231348}
+  - _json: '{"_name":"ballKicked","_id":"cbc4e060-0eea-4b9f-a4c9-4fc0a02db6a0","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"fishAttacking","_id":"12d8240d-1779-433c-8956-31dd6416b2a3","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"isWandering","_id":"109399d1-2e67-4f75-a6ed-84a324e710e1","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
 --- !u!114 &155107113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -772,7 +787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serializedExposedParameters: []
-  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"waitTime":0.25,"distance":2.0,"ground":{"value":128},"$type":"NodeCanvas.Tasks.Actions.WanderAT"},{"food":{"_name":"Food","_targetVariableID":"e507df4b-6866-4d4c-8745-948306592cc9"},"light":{"_name":"Light","_targetVariableID":"e78ec895-74f4-4841-a388-e28bda96584e"},"sleep":{"_name":"Sleep","_targetVariableID":"6a45d7e8-ad33-400f-85d2-e53df3d96161"},"fun":{"_name":"Fun","_targetVariableID":"f21bac57-9716-421e-9a3f-dbac33b646e5"},"timerSpeed":{"_name":"timerSpeed","_targetVariableID":"81958732-8de7-42f9-b29d-8ba2e61889b4"},"$type":"NodeCanvas.Tasks.Actions.StatManagerAT"},{"immediately":true,"_isDisabled":true,"overrideAgent":{"_type":"UnityEngine.Transform","_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_color":{"r":1.0,"g":1.0,"b":1.0,"a":1.0},"_name":"Wander","_position":{"x":288.4913,"y":300.9596},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"parent":{},"clonePosition":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"cloneRotation":{},"saveCloneAs":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"overrideAgent":{"_type":"UnityEngine.Transform","_value":1},"$type":"NodeCanvas.Tasks.Actions.InstantiateGameObject"},{"thoughtBubble":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"bubbleTransform":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"enableBurger":true,"$type":"NodeCanvas.Tasks.Actions.ThinkThoughtAT"},{"burgerLayer":{"value":256},"food":{"_name":"Food","_targetVariableID":"e507df4b-6866-4d4c-8745-948306592cc9"},"$type":"NodeCanvas.Tasks.Actions.EatAT"},{"_isDisabled":true,"overrideAgent":{"_type":"UnityEngine.Transform","_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_color":{"r":1.0,"g":0.5808714,"b":0.3160377,"a":1.0},"_name":"Eat","_position":{"x":571.9167,"y":452.3796},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"executionMode":1,"actions":[{"parent":{},"clonePosition":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"cloneRotation":{},"saveCloneAs":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"overrideAgent":{"_type":"UnityEngine.Transform","_value":1},"$type":"NodeCanvas.Tasks.Actions.InstantiateGameObject"},{"thoughtBubble":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"bubbleTransform":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"enableZzz":true,"$type":"NodeCanvas.Tasks.Actions.ThinkThoughtAT"},{"caveSpot":{"_name":"caveSpot","_targetVariableID":"c7110ad4-6269-40f3-a649-8ef4a3ee26d8"},"sleep":{"_name":"Sleep","_targetVariableID":"6a45d7e8-ad33-400f-85d2-e53df3d96161"},"$type":"NodeCanvas.Tasks.Actions.SleepAT"}]},"_color":{"r":0.3443396,"g":0.7444538,"b":1.0,"a":1.0},"_name":"Sleep","_position":{"x":-285.4833,"y":113.5738},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"},{"_actionList":{"executionMode":1,"actions":[{"parent":{},"clonePosition":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"cloneRotation":{},"saveCloneAs":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"overrideAgent":{"_type":"UnityEngine.Transform","_value":1},"$type":"NodeCanvas.Tasks.Actions.InstantiateGameObject"},{"thoughtBubble":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"bubbleTransform":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"enableLight":true,"$type":"NodeCanvas.Tasks.Actions.ThinkThoughtAT"},{"lightSpot":{"_name":"lightSpot","_targetVariableID":"26a3d101-b21e-4c16-8404-97ee2b321044"},"light":{"_name":"Light","_targetVariableID":"e78ec895-74f4-4841-a388-e28bda96584e"},"$type":"NodeCanvas.Tasks.Actions.PhotosynthesizeAT"}]},"_color":{"r":0.7010012,"g":1.0,"b":0.3726415,"a":1.0},"_name":"Photosynthesize","_position":{"x":430.9715,"y":110.7489},"$type":"NodeCanvas.StateMachines.ActionState","$id":"3"},{"_nestedFSM":{"_value":2},"_name":"Play","_position":{"x":113.4156,"y":459.6451},"$type":"NodeCanvas.StateMachines.NestedFSMState","$id":"4"},{"_nestedFSM":{"_value":3},"_name":"Flee","_position":{"x":-18.2774,"y":449.2608},"$type":"NodeCanvas.StateMachines.NestedFSMState"}],"connections":[{"_condition":{"valueA":{"_name":"Food","_targetVariableID":"e507df4b-6866-4d4c-8745-948306592cc9"},"checkType":4,"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"Sleep","_targetVariableID":"6a45d7e8-ad33-400f-85d2-e53df3d96161"},"checkType":4,"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"Light","_targetVariableID":"e78ec895-74f4-4841-a388-e28bda96584e"},"checkType":4,"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"Fun","_targetVariableID":"f21bac57-9716-421e-9a3f-dbac33b646e5"},"checkType":4,"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"Food","_targetVariableID":"e507df4b-6866-4d4c-8745-948306592cc9"},"checkType":3,"valueB":{"_value":10.0},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"Sleep","_targetVariableID":"6a45d7e8-ad33-400f-85d2-e53df3d96161"},"checkType":3,"valueB":{"_value":10.0},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"Light","_targetVariableID":"e78ec895-74f4-4841-a388-e28bda96584e"},"checkType":3,"valueB":{"_value":10.0},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"Fun","_targetVariableID":"f21bac57-9716-421e-9a3f-dbac33b646e5"},"checkType":3,"valueB":{"_value":10.0},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},"_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"waitTime":0.25,"distance":2.0,"ground":{"value":128},"isWandering":{"_name":"isWandering","_targetVariableID":"109399d1-2e67-4f75-a6ed-84a324e710e1"},"$type":"NodeCanvas.Tasks.Actions.WanderAT"},{"food":{"_name":"Food","_targetVariableID":"e507df4b-6866-4d4c-8745-948306592cc9"},"light":{"_name":"Light","_targetVariableID":"e78ec895-74f4-4841-a388-e28bda96584e"},"sleep":{"_name":"Sleep","_targetVariableID":"6a45d7e8-ad33-400f-85d2-e53df3d96161"},"fun":{"_name":"Fun","_targetVariableID":"f21bac57-9716-421e-9a3f-dbac33b646e5"},"timerSpeed":{"_name":"timerSpeed","_targetVariableID":"81958732-8de7-42f9-b29d-8ba2e61889b4"},"$type":"NodeCanvas.Tasks.Actions.StatManagerAT"}]},"_color":{"r":1.0,"g":1.0,"b":1.0,"a":1.0},"_name":"Wander","_position":{"x":288.4913,"y":300.9596},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"parent":{},"clonePosition":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"cloneRotation":{},"saveCloneAs":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"overrideAgent":{"_type":"UnityEngine.Transform","_value":1},"$type":"NodeCanvas.Tasks.Actions.InstantiateGameObject"},{"thoughtBubble":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"bubbleTransform":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"enableBurger":true,"$type":"NodeCanvas.Tasks.Actions.ThinkThoughtAT"},{"burgerLayer":{"value":256},"food":{"_name":"Food","_targetVariableID":"e507df4b-6866-4d4c-8745-948306592cc9"},"$type":"NodeCanvas.Tasks.Actions.EatAT"},{"_isDisabled":true,"overrideAgent":{"_type":"UnityEngine.Transform","_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"$type":"NodeCanvas.Tasks.Actions.DestroyGameObject"}]},"_color":{"r":1.0,"g":0.5808714,"b":0.3160377,"a":1.0},"_name":"Eat","_position":{"x":571.9167,"y":452.3796},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"executionMode":1,"actions":[{"parent":{},"clonePosition":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"cloneRotation":{},"saveCloneAs":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"overrideAgent":{"_type":"UnityEngine.Transform","_value":1},"$type":"NodeCanvas.Tasks.Actions.InstantiateGameObject"},{"thoughtBubble":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"bubbleTransform":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"enableZzz":true,"$type":"NodeCanvas.Tasks.Actions.ThinkThoughtAT"},{"caveSpot":{"_name":"caveSpot","_targetVariableID":"c7110ad4-6269-40f3-a649-8ef4a3ee26d8"},"sleep":{"_name":"Sleep","_targetVariableID":"6a45d7e8-ad33-400f-85d2-e53df3d96161"},"$type":"NodeCanvas.Tasks.Actions.SleepAT"}]},"_color":{"r":0.3443396,"g":0.7444538,"b":1.0,"a":1.0},"_name":"Sleep","_position":{"x":-285.4833,"y":113.5738},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"},{"_actionList":{"executionMode":1,"actions":[{"parent":{},"clonePosition":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"cloneRotation":{},"saveCloneAs":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"overrideAgent":{"_type":"UnityEngine.Transform","_value":1},"$type":"NodeCanvas.Tasks.Actions.InstantiateGameObject"},{"thoughtBubble":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"bubbleTransform":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"enableLight":true,"$type":"NodeCanvas.Tasks.Actions.ThinkThoughtAT"},{"lightSpot":{"_name":"lightSpot","_targetVariableID":"26a3d101-b21e-4c16-8404-97ee2b321044"},"light":{"_name":"Light","_targetVariableID":"e78ec895-74f4-4841-a388-e28bda96584e"},"$type":"NodeCanvas.Tasks.Actions.PhotosynthesizeAT"}]},"_color":{"r":0.7010012,"g":1.0,"b":0.3726415,"a":1.0},"_name":"Photosynthesize","_position":{"x":430.9715,"y":110.7489},"$type":"NodeCanvas.StateMachines.ActionState","$id":"3"},{"_nestedFSM":{"_value":2},"_name":"Play","_position":{"x":113.4156,"y":459.6451},"$type":"NodeCanvas.StateMachines.NestedFSMState","$id":"4"},{"_nestedFSM":{"_value":3},"_name":"Flee","_position":{"x":-29.2774,"y":455.2608},"$type":"NodeCanvas.StateMachines.NestedFSMState","$id":"5"}],"connections":[{"_condition":{"valueA":{"_name":"Food","_targetVariableID":"e507df4b-6866-4d4c-8745-948306592cc9"},"checkType":4,"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"Sleep","_targetVariableID":"6a45d7e8-ad33-400f-85d2-e53df3d96161"},"checkType":4,"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"Light","_targetVariableID":"e78ec895-74f4-4841-a388-e28bda96584e"},"checkType":4,"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"Fun","_targetVariableID":"f21bac57-9716-421e-9a3f-dbac33b646e5"},"checkType":4,"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"fishAttacking","_targetVariableID":"12d8240d-1779-433c-8956-31dd6416b2a3"},"valueB":{"_value":true},"$type":"NodeCanvas.Tasks.Conditions.CheckBoolean"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"Food","_targetVariableID":"e507df4b-6866-4d4c-8745-948306592cc9"},"checkType":3,"valueB":{"_value":10.0},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"Sleep","_targetVariableID":"6a45d7e8-ad33-400f-85d2-e53df3d96161"},"checkType":3,"valueB":{"_value":10.0},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"Light","_targetVariableID":"e78ec895-74f4-4841-a388-e28bda96584e"},"checkType":3,"valueB":{"_value":10.0},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"Fun","_targetVariableID":"f21bac57-9716-421e-9a3f-dbac33b646e5"},"checkType":3,"valueB":{"_value":10.0},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},"_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
   _boundGraphObjectReferences:
   - {fileID: 0}
   - {fileID: 1657925124922836911, guid: c62aa6f6d764b424ca537f823254ec25, type: 3}
@@ -782,8 +797,8 @@ MonoBehaviour:
     _version: 3.33
     _category: 
     _comments: 
-    _translation: {x: 107, y: 131}
-    _zoomFactor: 1
+    _translation: {x: -94, y: 216}
+    _zoomFactor: 0.93763846
   _firstActivation: 0
   _enableAction: 0
   _disableAction: 0
@@ -921,6 +936,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   burger: {fileID: 7672304493922456275, guid: 6da25b25de8f302479122a9fc00201d5, type: 3}
   ball: {fileID: 4515447830668060714, guid: 952046b1c06af1045a9175afad76ca13, type: 3}
+  fishLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  fishBB: {fileID: 1715540169}
 --- !u!1 &163489389
 GameObject:
   m_ObjectHideFlags: 0
@@ -1926,6 +1945,114 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 690419633}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &737231344
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 737231348}
+  - component: {fileID: 737231347}
+  - component: {fileID: 737231346}
+  - component: {fileID: 737231345}
+  m_Layer: 0
+  m_Name: CaveEntranceSpot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!135 &737231345
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737231344}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &737231346
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737231344}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &737231347
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737231344}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &737231348
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737231344}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.929, y: -0.03, z: 2.033}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &770854653
 GameObject:
   m_ObjectHideFlags: 0
@@ -3082,6 +3209,176 @@ Transform:
   - {fileID: 1842801347}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1715540166
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1715540168}
+  - component: {fileID: 1715540167}
+  - component: {fileID: 1715540169}
+  - component: {fileID: 1715540171}
+  - component: {fileID: 1715540170}
+  m_Layer: 6
+  m_Name: Fish
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1715540167
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715540166}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: c7a5ed82fa4235246a9d0a2e6106fc28, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1715540168
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715540166}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.25, y: 2.3294713, z: 0.45}
+  m_LocalScale: {x: 2.5470026, y: 2.5470026, z: 2.5470026}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1715540169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715540166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentBlackboard: {fileID: 0}
+  _serializedBlackboard: '{"_variables":{"isAttacking":{"_name":"isAttacking","_id":"72161889-240f-4064-a356-42612f310d4c","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"fishTimer":{"_value":2.0,"_name":"fishTimer","_id":"ee4f87b8-65fc-42db-b700-6de9ce02a128","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"fishClicked":{"_name":"fishClicked","_id":"0c50f2f8-55ca-46b2-b66e-b192e7b6e592","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
+  _objectReferences: []
+  _serializedVariables:
+  - _json: '{"_name":"isAttacking","_id":"72161889-240f-4064-a356-42612f310d4c","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_value":2.0,"_name":"fishTimer","_id":"ee4f87b8-65fc-42db-b700-6de9ce02a128","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_name":"fishClicked","_id":"0c50f2f8-55ca-46b2-b66e-b192e7b6e592","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+--- !u!65 &1715540170
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715540166}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.438269, y: 1.8742348, z: 0.20000002}
+  m_Center: {x: 0.015017267, y: -0.045114145, z: 0}
+--- !u!114 &1715540171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715540166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a7dbb6bbdf4ffb46ab7dd87ba8191e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedExposedParameters: []
+  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"fishTimer":{"_name":"fishTimer","_targetVariableID":"ee4f87b8-65fc-42db-b700-6de9ce02a128"},"mainBB":1,"$type":"NodeCanvas.Tasks.Actions.FishWaitAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Wait","_position":{"x":158.0,"y":379.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"isAttacking":{"_name":"isAttacking","_targetVariableID":"72161889-240f-4064-a356-42612f310d4c"},"mainBB":1,"$type":"NodeCanvas.Tasks.Actions.FishAttackAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Attack","_position":{"x":419.0,"y":477.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"}],"connections":[{"_condition":{"valueA":{"_name":"fishTimer","_targetVariableID":"ee4f87b8-65fc-42db-b700-6de9ce02a128"},"checkType":4,"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _boundGraphObjectReferences:
+  - {fileID: 0}
+  - {fileID: 155107112}
+  _boundGraphSource:
+    _version: 3.33
+    _category: 
+    _comments: 
+    _translation: {x: -73, y: 116}
+    _zoomFactor: 1
+  _firstActivation: 0
+  _enableAction: 0
+  _disableAction: 0
+  _lockBoundGraphPrefabOverrides: 1
+  _preInitializeSubGraphs: 0
+  _updateMode: 0
+  _graph: {fileID: 0}
+  _blackboard: {fileID: 1715540169}
 --- !u!1 &1730691249
 GameObject:
   m_ObjectHideFlags: 0
@@ -3184,7 +3481,7 @@ Transform:
   m_GameObject: {fileID: 1730691249}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.38, y: -0.03, z: 3.6}
+  m_LocalPosition: {x: 1.482, y: -0.03, z: 3.7}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3850,4 +4147,6 @@ SceneRoots:
   - {fileID: 1094458115}
   - {fileID: 1878012466}
   - {fileID: 1730691253}
+  - {fileID: 737231348}
   - {fileID: 34069844}
+  - {fileID: 1715540168}
