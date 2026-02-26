@@ -7,6 +7,7 @@ namespace NodeCanvas.Tasks.Actions {
 
 	public class FishAttackAT : ActionTask {
 		public BBParameter<bool> isAttacking;
+		public BBParameter<float> fishTimer;
 		public Blackboard mainBB;
 		//Use for initialization. This is called only once in the lifetime of the task.
 		//Return null if init was successfull. Return an error string otherwise
@@ -33,7 +34,8 @@ namespace NodeCanvas.Tasks.Actions {
 
         //Called when the task is disabled.
         protected override void OnStop() {
-            isAttacking.value = false;
+			fishTimer.value = 10;
+			isAttacking.value = false;
             mainBB.SetVariableValue("fishAttacking", false);
             agent.GetComponent<SpriteRenderer>().enabled = false;
         }

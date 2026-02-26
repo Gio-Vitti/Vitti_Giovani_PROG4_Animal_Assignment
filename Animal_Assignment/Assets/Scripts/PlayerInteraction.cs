@@ -28,6 +28,11 @@ public class PlayerInteraction : MonoBehaviour
         {
             SpawnBall();
         }
+
+        if (Input.GetMouseButtonDown(0) && fishBB.GetVariableValue<bool>("isAttacking") == true)
+        {
+            ClickFish();
+        }
     }
 
     public void SpawnBurger()
@@ -48,12 +53,13 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 
-    public void clickFish()
+    public void ClickFish()
     {
         Ray mouseRay = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
         if (Physics.Raycast(mouseRay, out RaycastHit hitInfo, fishLayer))
         {
-            fishBB.SetVariableValue("fishClicked", true);
+            fishBB.SetVariableValue("fishTimer", 10);
+            fishBB.SetVariableValue("isAttacking", false); 
         }
     }
 }
