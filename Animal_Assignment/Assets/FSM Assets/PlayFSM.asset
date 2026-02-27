@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
   m_Name: PlayFSM
   m_EditorClassIdentifier: 
-  _serializedGraph: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"parent":{},"clonePosition":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"cloneRotation":{},"saveCloneAs":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"overrideAgent":{"_type":"UnityEngine.Transform","_value":1},"$type":"NodeCanvas.Tasks.Actions.InstantiateGameObject"},{"thoughtBubble":{},"bubbleTransform":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"enableBall":true,"$type":"NodeCanvas.Tasks.Actions.ThinkThoughtAT"},{"ballLayer":{"value":512},"fun":{"_name":"Fun","_targetVariableID":"f21bac57-9716-421e-9a3f-dbac33b646e5"},"ballKicked":{"_name":"ballKicked","_targetVariableID":"cbc4e060-0eea-4b9f-a4c9-4fc0a02db6a0"},"playTxt":{"_name":"playTxt","_targetVariableID":"3267d7a6-c031-4eeb-89a9-0382242c2b9e"},"$type":"NodeCanvas.Tasks.Actions.PlayAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Approach
-    Ball","_position":{"x":-242.6646,"y":290.324},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"waitTime":{"_value":2.0},"$type":"NodeCanvas.Tasks.Actions.Wait"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Kick
+  _serializedGraph: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"parent":{},"clonePosition":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"cloneRotation":{},"saveCloneAs":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"overrideAgent":{"_type":"UnityEngine.Transform","_value":1},"$type":"NodeCanvas.Tasks.Actions.InstantiateGameObject"},{"thoughtBubble":{"_name":"thoughtBubble","_targetVariableID":"ef2d253d-f3b4-4ca1-891f-77bc17aaf4f8"},"bubbleTransform":{"_name":"bubbleTransform","_targetVariableID":"52ad96f3-79d1-4c09-b08f-1d70b06c5bd9"},"enableBall":true,"$type":"NodeCanvas.Tasks.Actions.ThinkThoughtAT"},{"ballLayer":{"value":512},"fun":{"_name":"Fun","_targetVariableID":"f21bac57-9716-421e-9a3f-dbac33b646e5"},"ballKicked":{"_name":"ballKicked","_targetVariableID":"cbc4e060-0eea-4b9f-a4c9-4fc0a02db6a0"},"playTxt":{"_name":"playTxt","_targetVariableID":"3267d7a6-c031-4eeb-89a9-0382242c2b9e"},"$type":"NodeCanvas.Tasks.Actions.PlayAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Approach
+    Ball","_position":{"x":-241.6525,"y":298.4208},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"waitTime":{"_value":2.0},"$type":"NodeCanvas.Tasks.Actions.Wait"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Kick
     and Wait","_position":{"x":287.4155,"y":415.8214},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"}],"connections":[{"_condition":{"trigger":{"_name":"ballKicked","_targetVariableID":"cbc4e060-0eea-4b9f-a4c9-4fc0a02db6a0"},"$type":"NodeCanvas.Tasks.Conditions.CheckBooleanTrigger"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
   _objectReferences:
   - {fileID: 0}
@@ -22,7 +22,7 @@ MonoBehaviour:
     _version: 3.33
     _category: 
     _comments: 
-    _translation: {x: 210.6955, y: 243.24269}
+    _translation: {x: 289, y: 248}
     _zoomFactor: 0.9880433
   _haltSerialization: 0
   _externalSerializationFile: {fileID: 0}
