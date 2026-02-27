@@ -13,7 +13,7 @@ namespace NodeCanvas.Tasks.Actions {
 		public LayerMask burgerLayer;
 		public BBParameter<float> food;
         private NavMeshAgent navAgent;
-	
+        public GameObject foodTxt;
 
         //Use for initialization. This is called only once in the lifetime of the task.
         //Return null if init was successfull. Return an error string otherwise
@@ -26,7 +26,7 @@ namespace NodeCanvas.Tasks.Actions {
 		//EndAction can be called from anywhere.
 		protected override void OnExecute() {
             navAgent = agent.GetComponent<NavMeshAgent>();
-			
+			foodTxt.SetActive(true);
         }
 
 		//Called once per frame while the action is active.
@@ -48,8 +48,8 @@ namespace NodeCanvas.Tasks.Actions {
 		
 		//Called when the task is disabled.
 		protected override void OnStop() {
-			
-		}
+            foodTxt.SetActive(false);
+        }
 
 		//Called when the task is paused.
 		protected override void OnPause() {

@@ -26,7 +26,7 @@ namespace NodeCanvas.Tasks.Actions {
 		protected override void OnUpdate() {
 			if (mainBB.GetVariableValue<bool>("isWandering") == true)
 			{
-                fishTimer.value -= Time.deltaTime;
+                fishTimer.value -= Time.deltaTime * 0.7f;
             }
 		
 		}

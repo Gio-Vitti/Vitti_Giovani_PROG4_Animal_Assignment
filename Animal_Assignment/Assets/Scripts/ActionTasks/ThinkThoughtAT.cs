@@ -16,12 +16,14 @@ namespace NodeCanvas.Tasks.Actions {
 		private GameObject light;
 		private GameObject ball;
 		private GameObject zzz;
+		private GameObject surprise;
 
 		//enable icon
 		public bool enableBurger;
 		public bool enableLight;
 		public bool enableBall;
 		public bool enableZzz;
+		public bool enableSurprise;
 
         //Use for initialization. This is called only once in the lifetime of the task.
         //Return null if init was successfull. Return an error string otherwise
@@ -41,12 +43,14 @@ namespace NodeCanvas.Tasks.Actions {
             light = thoughtBubble.value.transform.GetChild(1).gameObject;
             ball = thoughtBubble.value.transform.GetChild(2).gameObject;
             zzz = thoughtBubble.value.transform.GetChild(3).gameObject;
+			surprise = thoughtBubble.value.transform.GetChild(4).gameObject;
 
 			//enable objects
 			burger.SetActive(enableBurger);
 			light.SetActive(enableLight);
 			ball.SetActive(enableBall);
 			zzz.SetActive(enableZzz);
+			surprise.SetActive(enableSurprise);
         }
 
 		//Called once per frame while the action is active.

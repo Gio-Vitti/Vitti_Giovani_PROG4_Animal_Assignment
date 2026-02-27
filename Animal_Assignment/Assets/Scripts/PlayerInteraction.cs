@@ -9,7 +9,8 @@ public class PlayerInteraction : MonoBehaviour
     private Blackboard blackboard;
     public LayerMask fishLayer;
     public Blackboard fishBB;
-
+    
+  
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -58,7 +59,7 @@ public class PlayerInteraction : MonoBehaviour
         Ray mouseRay = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
         if (Physics.Raycast(mouseRay, out RaycastHit hitInfo, fishLayer))
         {
-            fishBB.SetVariableValue("fishTimer", 10);
+            
             fishBB.SetVariableValue("isAttacking", false); 
         }
     }
